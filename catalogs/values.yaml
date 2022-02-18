@@ -85,5 +85,5 @@ affinity: {}
 mongo1:
   service:
     type: NodePort
-    port: 30301
+    nodePort: 30301
   nameOverride: catalogs-mongo

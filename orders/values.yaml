@@ -85,5 +85,5 @@ affinity: {}
 mongo2:
   service:
     type: NodePort
-    port: 30302
+    nodePort: 30302
   nameOverride: orders-mongo
