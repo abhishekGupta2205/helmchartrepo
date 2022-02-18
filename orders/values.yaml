@@ -86,4 +86,6 @@ mongodb:
   service:
     type: NodePort
     port: 30302
-    nameOverride: orders-mongo
+  arbiter:
+    service:
+      nameOverride: orders-mongo
