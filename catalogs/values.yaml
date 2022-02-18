@@ -85,3 +85,4 @@ affinity: {}
 mongodb:
   service:
     type: NodePort
+    port: 30301
