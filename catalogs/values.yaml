@@ -86,6 +86,4 @@ mongodb:
   service:
     type: NodePort
     port: 30301
-  arbiter:
-    service:
-      nameOverride: catalogs-mongo
+  nameOverride: catalogs-mongo
