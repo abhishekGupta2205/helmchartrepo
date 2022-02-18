@@ -82,7 +82,8 @@ tolerations: []
 affinity: {}
 
 
-mongo1:
+mongodb:
   service:
     type: NodePort
     port: 30301
+    nameOverride: catalogs-mongo
