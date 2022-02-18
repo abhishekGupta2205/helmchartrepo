@@ -82,7 +82,7 @@ tolerations: []
 
 affinity: {}
 
-mongodb:
+mongo2:
   service:
     type: NodePort
     port: 30302
