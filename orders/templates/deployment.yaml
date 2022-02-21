@@ -39,20 +39,14 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /hello/health
-              port: 8090
-            initialDelaySeconds: 50
-            periodSeconds: 10
-            successThreshold: 1
-            timeoutSeconds: 10
+              path: {{ .Values.livepath }}
+              port: {{ .Values.liveport }}
+            
           readinessProbe:
             httpGet:
-              path: /hello/health
-              port: 8090
-            initialDelaySeconds: 50
-            periodSeconds: 10
-            successThreshold: 1
-            timeoutSeconds: 10
+              path: {{ .Values.readpath }}
+              port: {{ .Values.readport }}
+            
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

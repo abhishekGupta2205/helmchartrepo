@@ -40,6 +40,7 @@ securityContext: {}
 service:
   type: NodePort
   port: 80
+  nodePort: 32101
 
 ingress:
   enabled: false
@@ -81,7 +82,10 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
+livepath: /hello/health
+liveport: 8090
+readpath: /hello/health
+readport: 8090
 mongo2:
   service:
     type: NodePort

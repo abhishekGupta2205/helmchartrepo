@@ -39,6 +39,7 @@ securityContext: {}
 service:
   type: NodePort
   port: 80
+  nodePort: 32100
 
 ingress:
   enabled: false
@@ -80,10 +81,23 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
+livepath: /hello/health
+liveport: 8089
+readpath: /hello/health
+readport: 8089
+ids: 50 
+ps: 10
+st: 1
+ts: 10 
 
 mongo1:
   service:
     type: NodePort
     nodePort: 30301
   nameOverride: catalogs-mongo
+  
+  
+  
+  
+  
+  
