@@ -85,15 +85,12 @@ livepath: /hello/health
 liveport: 8089
 readpath: /hello/health
 readport: 8089
-ids: 50 
-ps: 10
-st: 1
-ts: 10 
+
 
 mongo1:
   service:
     type: NodePort
-    nodePort: 30301
+    nodePort: 30272
   nameOverride: catalogs-mongo
   
   

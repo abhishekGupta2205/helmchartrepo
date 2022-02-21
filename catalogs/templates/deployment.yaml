@@ -41,7 +41,7 @@ spec:
             httpGet:
               path: {{ .Values.livepath }}
               port: {{ .Values.liveport }}
-            
+           
           readinessProbe:
             httpGet:
              path: {{ .Values.readpath }}

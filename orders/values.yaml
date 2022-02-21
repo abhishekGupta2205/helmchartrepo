@@ -86,8 +86,9 @@ livepath: /hello/health
 liveport: 8090
 readpath: /hello/health
 readport: 8090
+
 mongo2:
   service:
     type: NodePort
-    nodePort: 30302
+    nodePort: 30272
   nameOverride: orders-mongo
