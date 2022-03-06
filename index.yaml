@@ -3,14 +3,14 @@ entries:
   catalog1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-28T17:15:09.584210607+05:30"
+    created: "2022-03-07T00:04:36.495053465+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
       repository: https://charts.bitnami.com/bitnami
       version: 11.0.3
     description: A Helm chart for Kubernetes
-    digest: 51bb8ff4cc3a551bf83ff381a2c22d323e3da7ef08c6a88c3e7509c3e2af321d
+    digest: 74c6065c7bac4ef754a63dd419ed6ee903e1a430fbabd799f0b1e9028149f0d4
     name: catalog1
     type: application
     urls:
@@ -19,7 +19,7 @@ entries:
   catalogs:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-28T17:15:09.589876363+05:30"
+    created: "2022-03-07T00:04:36.509675788+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
@@ -35,14 +35,14 @@ entries:
   order1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-28T17:15:09.595393038+05:30"
+    created: "2022-03-07T00:04:36.520480939+05:30"
     dependencies:
     - alias: mongo2
       name: mongodb
       repository: https://charts.bitnami.com/bitnami
       version: 11.0.3
     description: A Helm chart for Kubernetes
-    digest: 1e620bce3d6200f9a259a39a9abf06181fde13f4427c78d6d36e56dbde449283
+    digest: ed6abc2fe1b7d74ca93c1521dac189bfcd6961de150d268af145bf054805d766
     name: order1
     type: application
     urls:
@@ -51,7 +51,7 @@ entries:
   orders:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-28T17:15:09.600327811+05:30"
+    created: "2022-03-07T00:04:36.529187879+05:30"
     dependencies:
     - alias: mongo2
       name: mongodb
@@ -64,4 +64,4 @@ entries:
     urls:
     - orders-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-28T17:15:09.579023117+05:30"
+generated: "2022-03-07T00:04:36.48986779+05:30"

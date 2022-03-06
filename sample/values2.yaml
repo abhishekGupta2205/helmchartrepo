@@ -1,0 +1,49 @@
+catalog1:
+  containerPort: 8079
+  image:
+    tag: 2.1
+  liveport: 8079
+  readport: 8079
+  mongo1:
+    service:
+      nodePort: 30311
+  service:
+    port: 8079
+    nodePort: 32200
+
+catalogs:
+  containerPort: 8077
+  image:
+    tag: 2.1
+  liveport: 8077
+
+order1:
+  containerPort: 8078
+  image:
+    tag: 2.1
+  liveport: 8078
+  readport: 8078
+  mongo2:
+    service:
+      nodePort: 30312
+  service:
+    port: 8078
+    nodePort: 32201
+
+readport: 8077
+
+redis:
+  master:
+    service:
+      nodePorts:
+        redis: 30113
+  replica:
+    service:
+      nodePorts:
+        redis: 30114
+
+service:
+  port: 8077
+  nodePort: 32202
+
+env: qa

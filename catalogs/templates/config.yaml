@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+    active: {{ .Values.envir }}
+
+kind: ConfigMap
+metadata:
+  name: profiles
+  

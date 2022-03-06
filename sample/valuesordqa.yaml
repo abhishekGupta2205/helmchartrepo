@@ -92,7 +92,7 @@ readport: 8090
 mongo2:
   service:
     type: NodePort
-    nodePort: 30272
+    nodePort: 30312
 
     
 
@@ -101,4 +101,4 @@ mongo2:
     rootPassword: abhishek
     password: abhishek
 
-  
+env: qa

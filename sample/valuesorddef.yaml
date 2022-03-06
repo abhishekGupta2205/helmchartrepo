@@ -101,4 +101,4 @@ mongo2:
     rootPassword: abhishek
     password: abhishek
 
-  
+env: default

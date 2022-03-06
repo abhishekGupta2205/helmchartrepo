@@ -1,15 +1,16 @@
-# Default values for order1.
+# Default values for catalog1.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: abhishekgupta2205/order
+  repository: abhishekgupta2205/catalog
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: 3.3
-containerPort: 8090
+containerPort: 8089
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -38,8 +39,8 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 8090
-  nodePort: 32101
+  port: 8089
+  nodePort: 32100
 
 ingress:
   enabled: false
@@ -81,24 +82,26 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
 livepath: /hello/health
-liveport: 8090
+liveport: 8089
 readpath: /hello/health
-readport: 8090
+readport: 8089
 
 
 
-mongo2:
+mongo1:
   service:
     type: NodePort
-    nodePort: 30272
+    nodePort: 30301
 
     
 
-  nameOverride: orders-mongo
+  nameOverride: catalogs-mongo
   auth:
     rootPassword: abhishek
     password: abhishek
+
+env: default
+
 
   

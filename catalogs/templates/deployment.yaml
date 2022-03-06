@@ -50,6 +50,13 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
+          env:
+            
+            - name: active
+              valueFrom:
+                configMapKeyRef:
+                  name: profiles
+                  key: active
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
