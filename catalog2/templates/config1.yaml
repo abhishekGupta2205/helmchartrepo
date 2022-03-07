@@ -1,0 +1,9 @@
+apiVersion: v1
+data:
+  ACTIVE: qa
+    #{{ .Values.envir}}
+
+kind: ConfigMap
+metadata:
+  name: myprofiles
+  

@@ -8,7 +8,7 @@ image:
   repository: abhishekgupta2205/catalog
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 3.3
+  tag: 1.3
 containerPort: 8089
 
 imagePullSecrets: []
@@ -40,7 +40,7 @@ securityContext: {}
 service:
   type: NodePort
   port: 8089
-  nodePort: 32200
+  nodePort: 32100
 
 ingress:
   enabled: false
@@ -92,7 +92,7 @@ readport: 8089
 mongo1:
   service:
     type: NodePort
-    nodePort: 30311
+    
 
     
 
@@ -100,6 +100,4 @@ mongo1:
   auth:
     rootPassword: abhishek
     password: abhishek
-
-env: qa
   
