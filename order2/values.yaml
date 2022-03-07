@@ -39,7 +39,7 @@ securityContext: {}
 service:
   type: NodePort
   port: 8090
-  nodePort: 32101
+  nodePort: 32201
 
 ingress:
   enabled: false

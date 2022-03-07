@@ -3,7 +3,7 @@ entries:
   catalog1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-07T12:42:27.059411363+05:30"
+    created: "2022-03-07T13:00:35.404835643+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
@@ -19,14 +19,14 @@ entries:
   catalog2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-07T12:42:27.063791206+05:30"
+    created: "2022-03-07T13:00:35.410791126+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
       repository: https://charts.bitnami.com/bitnami
       version: 11.0.3
     description: A Helm chart for Kubernetes
-    digest: b5c5054174c5494ca171aa3d8e8255eff915c8926f8dc6196846326b3258b4ed
+    digest: e130ec785521c58ae76e99dafd6d089c9448a7fcf98ca6e267262cdef704ba92
     name: catalog2
     type: application
     urls:
@@ -35,7 +35,7 @@ entries:
   catalogs:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-07T12:42:27.06783515+05:30"
+    created: "2022-03-07T13:00:35.41624536+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
@@ -51,7 +51,7 @@ entries:
   order1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-07T12:42:27.071578806+05:30"
+    created: "2022-03-07T13:00:35.421046701+05:30"
     dependencies:
     - alias: mongo2
       name: mongodb
@@ -67,14 +67,14 @@ entries:
   order2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-07T12:42:27.075741926+05:30"
+    created: "2022-03-07T13:00:35.426510945+05:30"
     dependencies:
     - alias: mongo2
       name: mongodb
       repository: https://charts.bitnami.com/bitnami
       version: 11.0.3
     description: A Helm chart for Kubernetes
-    digest: e1e8fdf4f9a85cc1edaddba37c35649dfa2df54611be7ea59c4828b9d6767b24
+    digest: 86b232fc6498c8318e3048a241b826d9eec0fd743fa4381c7d339f83c352d490
     name: order2
     type: application
     urls:
@@ -83,7 +83,7 @@ entries:
   orders:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-07T12:42:27.07941256+05:30"
+    created: "2022-03-07T13:00:35.431673915+05:30"
     dependencies:
     - alias: mongo2
       name: mongodb
@@ -96,4 +96,4 @@ entries:
     urls:
     - orders-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-07T12:42:27.055574506+05:30"
+generated: "2022-03-07T13:00:35.399177555+05:30"
