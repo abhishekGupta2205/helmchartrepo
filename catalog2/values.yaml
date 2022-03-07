@@ -92,7 +92,7 @@ readport: 8089
 mongo1:
   service:
     type: NodePort
-    
+    nodePort: 30311
 
     
 
