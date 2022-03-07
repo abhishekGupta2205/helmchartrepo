@@ -8,7 +8,7 @@ image:
   repository: abhishekgupta2205/catalog
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 1.3
+  tag: 3.3
 containerPort: 8089
 
 imagePullSecrets: []
