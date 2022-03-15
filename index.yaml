@@ -3,7 +3,7 @@ entries:
   catalog1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-08T12:24:36.868690541+05:30"
+    created: "2022-03-15T18:21:13.464096259+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
@@ -19,7 +19,7 @@ entries:
   catalogs:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-08T12:24:36.872665274+05:30"
+    created: "2022-03-15T18:21:13.46819004+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
@@ -32,10 +32,45 @@ entries:
     urls:
     - catalogs-0.1.0.tgz
     version: 0.1.0
+  mongodb:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 4.4.12
+    created: "2022-03-15T18:21:13.471955752+05:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: df46916d82c4cd931de5211507d845355791cfb79126c10f9c9c34dbc5281877
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    - https://mongodb.org
+    urls:
+    - mongodb-11.0.3.tgz
+    version: 11.0.3
   order1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-08T12:24:36.876966458+05:30"
+    created: "2022-03-15T18:21:13.475488604+05:30"
     dependencies:
     - alias: mongo2
       name: mongodb
@@ -51,7 +86,7 @@ entries:
   orders:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-08T12:24:36.880796854+05:30"
+    created: "2022-03-15T18:21:13.479897583+05:30"
     dependencies:
     - alias: mongo2
       name: mongodb
@@ -64,4 +99,4 @@ entries:
     urls:
     - orders-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-08T12:24:36.86111688+05:30"
+generated: "2022-03-15T18:21:13.447823305+05:30"
