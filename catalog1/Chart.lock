@@ -1,6 +1,6 @@
 dependencies:
 - name: mongodb
-  repository: https://charts.bitnami.com/bitnami
+  repository: https://abhishekgupta2205.github.io/helmchartrepo/
   version: 11.0.3
-digest: sha256:9e2cd683461ae15df44a0a2a2fec46ce712e140a30d4a127eb5f0af25c57b870
-generated: "2022-02-18T14:00:35.811063787+05:30"
+digest: sha256:55eec070d977486b02322c10ca9ec9cc756a35cadecb65c6604ac45e671be279
+generated: "2022-03-15T18:28:14.512287759+05:30"
