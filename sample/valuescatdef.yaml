@@ -93,10 +93,18 @@ mongo1:
   service:
     type: NodePort
     nodePort: 30301
+  hidden:
+    persistence:
+      enabled: false
+      size: 100Mi
+      mountPath: /bitnami
+      subPath: mongodb
+  host: /tmp
   persistence:
-    hostpath:
-      path: /mnt/data
+    enabled: false
     size: 100Mi
+    mountPath: /bitnami
+    subPath: mongodb
     
 
   nameOverride: catalogs-mongo

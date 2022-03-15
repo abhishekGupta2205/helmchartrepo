@@ -8,7 +8,7 @@ image:
   repository: abhishekgupta2205/order
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 3.3
+  tag: 3.5
 containerPort: 8090
 imagePullSecrets: []
 nameOverride: ""
@@ -39,7 +39,7 @@ securityContext: {}
 service:
   type: NodePort
   port: 8090
-  nodePort: 32101
+  nodePort: 32201
 
 ingress:
   enabled: false

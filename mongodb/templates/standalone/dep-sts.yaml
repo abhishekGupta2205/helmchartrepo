@@ -484,7 +484,8 @@ spec:
           emptyDir:
             medium: {{ .Values.persistence.medium | quote }}
           {{- else }}
-          emptyDir: {}
+          hostPath:
+            path: {{ .Values.host }}
           {{- end }}
   {{- else if .Values.persistence.existingClaim }}
         - name: datadir

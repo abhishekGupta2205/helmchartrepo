@@ -2,7 +2,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{ include "mongodb.fullname" . }}
+  name: db-claim
   namespace: {{ include "mongodb.namespace" . }}
   labels: {{- include "common.labels.standard" . | nindent 4 }}
     app.kubernetes.io/component: mongodb
@@ -19,6 +19,7 @@ metadata:
   {{- end }}
   {{- end }}
 spec:
+  storageClassName: manual
   accessModes:
   {{- range .Values.persistence.accessModes }}
     - {{ . | quote }}
