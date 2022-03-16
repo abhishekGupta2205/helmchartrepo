@@ -3,7 +3,7 @@ entries:
   catalog1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-16T13:39:08.251629015+05:30"
+    created: "2022-03-16T14:53:57.118715283+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
@@ -19,7 +19,7 @@ entries:
   catalogs:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-16T13:39:08.257434756+05:30"
+    created: "2022-03-16T14:53:57.124515116+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
@@ -32,12 +32,12 @@ entries:
     urls:
     - catalogs-0.1.0.tgz
     version: 0.1.0
-  mongodb:
+  mongodbdupl:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 4.4.12
-    created: "2022-03-16T13:39:08.262533707+05:30"
+    created: "2022-03-16T14:53:57.129427664+05:30"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -47,7 +47,7 @@ entries:
     description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
       it stores data in JSON-like documents. Automated scalability and high-performance.
       Ideal for developing cloud native applications.
-    digest: 6dabd3c33cbe4d941b4fab405eaf8fc09eee20d1798a7d91f32d05132648c48e
+    digest: 9479a9bf2844f9ad573c4e92a7dfafe7a7bda7e50d65ba779f9c481156d75c03
     home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
     icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
     keywords:
@@ -60,17 +60,17 @@ entries:
     maintainers:
     - email: containers@bitnami.com
       name: Bitnami
-    name: mongodb
+    name: mongodbdupl
     sources:
     - https://github.com/bitnami/bitnami-docker-mongodb
     - https://mongodb.org
     urls:
-    - mongodb-11.0.3.tgz
+    - mongodbdupl-11.0.3.tgz
     version: 11.0.3
   orders:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-16T13:39:08.271568697+05:30"
+    created: "2022-03-16T14:53:57.134386403+05:30"
     dependencies:
     - alias: mongo2
       name: mongodb
@@ -83,4 +83,4 @@ entries:
     urls:
     - orders-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-16T13:39:08.246234091+05:30"
+generated: "2022-03-16T14:53:57.113309468+05:30"

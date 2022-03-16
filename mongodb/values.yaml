@@ -790,7 +790,7 @@ externalAccess:
 persistence:
   ## @param persistence.enabled Enable MongoDB(&reg;) data persistence using PVC
   ##
-  enabled: true
+  enabled: false
   ## @param persistence.medium Provide a medium for `emptyDir` volumes.
   ## Requires persistence.enabled: false
   ##
@@ -814,18 +814,18 @@ persistence:
     - ReadWriteOnce
   ## @param persistence.size PVC Storage Request for MongoDB(&reg;) data volume
   ##
-  size: 8Gi
+  size: 100 Mi
   ## @param persistence.annotations PVC annotations
   ##
   annotations: {}
   ## @param persistence.mountPath Path to mount the volume at
   ## MongoDB(&reg;) images.
   ##
-  mountPath: /bitnami/mongodb
+  mountPath: /bitnami
   ## @param persistence.subPath Subdirectory of the volume to mount at
   ## and one PV for multiple services.
   ##
-  subPath: ""
+  subPath: mongodb
   ## Fine tuning for volumeClaimTemplates
   ##
   volumeClaimTemplates:
@@ -1487,7 +1487,7 @@ hidden:
   persistence:
     ## @param hidden.persistence.enabled Enable hidden node data persistence using PVC
     ##
-    enabled: true
+    enabled: false
     ## @param hidden.persistence.medium Provide a medium for `emptyDir` volumes.
     ## Requires hidden.persistence.enabled: false
     ##
@@ -1505,17 +1505,17 @@ hidden:
       - ReadWriteOnce
     ## @param hidden.persistence.size PVC Storage Request for hidden node data volume
     ##
-    size: 8Gi
+    size: 100Mi
     ## @param hidden.persistence.annotations PVC annotations
     ##
     annotations: {}
     ## @param hidden.persistence.mountPath The path the volume will be mounted at, useful when using different MongoDB(&reg;) images.
     ##
-    mountPath: /bitnami/mongodb
+    mountPath: /bitnami
     ## @param hidden.persistence.subPath The subdirectory of the volume to mount to, useful in dev environments
     ## and one PV for multiple services.
     ##
-    subPath: ""
+    subPath: mongodb
     ## Fine tuning for volumeClaimTemplates
     ##
     volumeClaimTemplates:

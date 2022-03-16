@@ -1,0 +1,6 @@
+dependencies:
+- name: mongodb
+  repository: https://abhishekgupta2205.github.io/helmchartrepo/
+  version: 11.0.3
+digest: sha256:55eec070d977486b02322c10ca9ec9cc756a35cadecb65c6604ac45e671be279
+generated: "2022-03-16T13:40:21.495110028+05:30"
