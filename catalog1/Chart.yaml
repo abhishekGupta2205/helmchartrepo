@@ -25,5 +25,5 @@ appVersion: "1.16.0"
 dependencies:
  - name: mongodb
    version: "11.0.3"
-   repository: "https://charts.bitnami.com/bitnami"
+   repository: "https://abhishekgupta2205.github.io/helmchartrepo/"
    alias: mongo1
