@@ -221,7 +221,8 @@ spec:
             - name: MONGODB_ROOT_USER
               value: {{ .Values.auth.rootUser | quote }}
             - name: MONGODB_ROOT_PASSWORD
-              value: {{ .Values.auth.rootPassword | quote }}
+              value: ""
+              # {{ .Values.auth.rootPassword | quote }}
             {{- end }}
             {{- if and .Values.metrics.enabled (not (empty .Values.metrics.username)) }}
             - name: MONGODB_METRICS_USERNAME

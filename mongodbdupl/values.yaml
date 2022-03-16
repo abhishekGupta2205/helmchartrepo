@@ -154,7 +154,7 @@ auth:
   ## @param auth.password DEPRECATED: use `auth.passwords` instead
   ## @param auth.database DEPRECATED: use `auth.databases` instead
   username: ""
-  password: abhishek
+  password: ""
   database: ""
   ## @param auth.replicaSetKey Key used for authentication in the replicaset (only when `architecture=replicaset`)
   ##
@@ -603,7 +603,7 @@ service:
   nameOverride: ""
   ## @param service.type Kubernetes Service type
   ##
-  type: ClusterIP
+  type: NodePort
   ## @param service.port MongoDB(&reg;) service port
   ##
   port: 27017
@@ -613,7 +613,7 @@ service:
   ## @param service.nodePort Port to bind to for NodePort and LoadBalancer service types
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
   ##
-  nodePort: ""
+  nodePort: 30300
   ## @param service.clusterIP MongoDB(&reg;) service cluster IP
   ## e.g:
   ## clusterIP: None
