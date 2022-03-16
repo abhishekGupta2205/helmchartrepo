@@ -1,9 +1,25 @@
 apiVersion: v1
 entries:
+  catalog1:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-03-16T13:18:13.630431804+05:30"
+    dependencies:
+    - alias: mongo1
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.3
+    description: A Helm chart for Kubernetes
+    digest: e9bc2bed77781bdab8c47c8876115190352fc0ca450ac4da02f0a8ad303b7f9e
+    name: catalog1
+    type: application
+    urls:
+    - catalog1-0.1.0.tgz
+    version: 0.1.0
   catalogs:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-15T23:03:16.891630787+05:30"
+    created: "2022-03-16T13:18:13.635910027+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
@@ -21,7 +37,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.12
-    created: "2022-03-15T23:03:16.896151836+05:30"
+    created: "2022-03-16T13:18:13.640947322+05:30"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -31,7 +47,7 @@ entries:
     description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
       it stores data in JSON-like documents. Automated scalability and high-performance.
       Ideal for developing cloud native applications.
-    digest: 5e2c3ad77298b8382ce4489abaa4ff977247cb89f1b1663bf0c29b6e570a8b91
+    digest: d54563aaae20da05fec91a8a6b932054ec9f892e8f9f73144475747e1d2446aa
     home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
     icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
     keywords:
@@ -54,7 +70,7 @@ entries:
   orders:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-15T23:03:16.900196535+05:30"
+    created: "2022-03-16T13:18:13.645585473+05:30"
     dependencies:
     - alias: mongo2
       name: mongodb
@@ -67,4 +83,4 @@ entries:
     urls:
     - orders-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-15T23:03:16.88761581+05:30"
+generated: "2022-03-16T13:18:13.625087715+05:30"

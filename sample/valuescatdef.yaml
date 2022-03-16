@@ -102,10 +102,19 @@ mongo1:
   host: /tmp
   persistence:
     enabled: false
-    size: 100Mi
+    medium: ""
+    existingClaim: ""
+    storageClass: ""
+    accessModes:
+      - ReadWriteOnce
+    size: 100 Mi
+  
+    annotations: {}
+  
     mountPath: /bitnami
+ 
     subPath: mongodb
-    
+ 
 
   nameOverride: catalogs-mongo
   auth:

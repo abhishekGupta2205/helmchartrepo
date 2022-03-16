@@ -93,15 +93,8 @@ mongo1:
   service:
     type: NodePort
     nodePort: 30301
-  persistence:
-    hostpath:
-      path: /mnt/data
-    size: 100Mi
-
-    
-
   nameOverride: catalogs-mongo
   auth:
     rootPassword: abhishek
     password: abhishek
-  
+
