@@ -3,14 +3,14 @@ entries:
   catalog1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-16T21:11:31.991349722+05:30"
+    created: "2022-03-17T17:29:53.164437987+05:30"
     dependencies:
     - alias: mongo1
-      name: mongodb
-      repository: https://charts.bitnami.com/bitnami
+      name: mongodbdupl
+      repository: https://abhishekgupta2205.github.io/helmchartrepo/
       version: 11.0.3
     description: A Helm chart for Kubernetes
-    digest: e9bc2bed77781bdab8c47c8876115190352fc0ca450ac4da02f0a8ad303b7f9e
+    digest: 5b48406f79b72268dacb9a9ef44e2fda9c041e6c746d002fd33640259e861214
     name: catalog1
     type: application
     urls:
@@ -19,7 +19,7 @@ entries:
   catalogs:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-16T21:11:31.995530417+05:30"
+    created: "2022-03-17T17:29:53.180609774+05:30"
     dependencies:
     - alias: mongo1
       name: mongodb
@@ -37,7 +37,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.12
-    created: "2022-03-16T21:11:31.999439814+05:30"
+    created: "2022-03-17T17:29:53.191803918+05:30"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -67,20 +67,53 @@ entries:
     urls:
     - mongodbdupl-11.0.3.tgz
     version: 11.0.3
-  orders:
+  order1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-16T21:11:32.00556299+05:30"
+    created: "2022-03-17T17:29:53.201435863+05:30"
     dependencies:
     - alias: mongo2
-      name: mongodb
-      repository: https://charts.bitnami.com/bitnami
+      name: mongodbdupl
+      repository: https://abhishekgupta2205.github.io/helmchartrepo/
       version: 11.0.3
     description: A Helm chart for Kubernetes
-    digest: ddb7cc102343be0ce84740e624767edf16f64633631fab1c906d926a8d9375e9
-    name: orders
+    digest: 917e28d5028ac5af0e31709d64350c55ebf777a2f8349674441a88487277e5ba
+    name: order1
     type: application
     urls:
-    - orders-0.1.0.tgz
+    - order1-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-16T21:11:31.987308048+05:30"
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.2.6
+    created: "2022-03-17T17:29:53.212532079+05:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Redis(TM) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: d980b46b08bf27c6e30c8e5d288dc9eb2a815627a55f3529be845c0f1e4ca440
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - redis-16.4.0.tgz
+    version: 16.4.0
+generated: "2022-03-17T17:29:53.15935192+05:30"

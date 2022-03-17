@@ -1,0 +1,6 @@
+dependencies:
+- name: mongodbdupl
+  repository: https://abhishekgupta2205.github.io/helmchartrepo/
+  version: 11.0.3
+digest: sha256:e8db2283cf95a7906db087dffc5934a1ab53f76ade446e08b21e3e3496549112
+generated: "2022-03-17T17:11:32.727888051+05:30"

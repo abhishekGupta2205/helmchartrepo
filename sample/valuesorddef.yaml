@@ -93,6 +93,28 @@ mongo2:
   service:
     type: NodePort
     nodePort: 30272
+  hidden:
+    persistence:
+      enabled: false
+      size: 100Mi
+      mountPath: /bitnami
+      subPath: mongodb1
+  host: /tmp
+  persistence:
+    enabled: false
+    medium: ""
+    existingClaim: ""
+    storageClass: ""
+    accessModes:
+      - ReadWriteOnce
+    size: 100 Mi
+  
+    annotations: {}
+  
+    mountPath: /bitnami
+ 
+    subPath: mongodb1
+
 
     
 
